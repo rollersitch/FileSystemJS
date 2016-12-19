@@ -27,8 +27,8 @@ Folder.prototype = {
 
 	removeChild: function(childId) {
 		var targets = this.children.filter(function (elem) {
-												return elem.getID() === childId;
-										});
+							return elem.getID() === childId;
+						});
 		// Is it possible to have different entities with same ID, given that
 		// it is provided by Math.random(), though unlikely.
 		// I select the first match only.
@@ -51,9 +51,8 @@ Folder.prototype = {
 
 	getChild: function(childId) {
 		return this.children.filter(function(elem) {
-														return elem.getID() === childId;
-													}
-									);
+						return elem.getID() === childId;
+					    });
 	},
 
 	show: function() {
